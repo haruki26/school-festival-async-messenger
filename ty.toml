@@ -1,0 +1,10 @@
+[src]
+include = ["**/src/**/*.py"]
+exclude = [
+  "**/.venv",
+  "**/__pycache__",
+  "**/scripts",
+]
+
+[environment]
+python = ".venv"

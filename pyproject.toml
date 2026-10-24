@@ -1,0 +1,26 @@
+[project]
+name = "school-festival-async-messenger"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "haruki26", email = "167726701+haruki26@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "opencv-python>=5.0.0.93",
+    "pyzmq>=27.2.0",
+]
+
+[project.scripts]
+school-festival-async-messenger = "school_festival_async_messenger:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.2",
+    "ty>=0.0.91",
+]
